@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin : 0;
+  padding : 0;
+  text-decoration : none;
+  list-style-type : none;
+  box-sizing: border-box;
+  font-family : 'Poppins', sans-serif;
+}
+
+/* --medium : 648px; */
+:root{
+    --primary: #ddf9f4;
+    --secondary: #009289;
+    --third: #008b9e;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* /========== Login Page ===========/  */
+.login__page{
+    width: 100%;
+    height: 100vh;
+    background: var(--primary);
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.login__container{
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.heading__box{
+    margin-bottom: 3.5rem;
+}
+
+.heading{
+    color: var(--third);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.form__wrap{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    min-height: 25rem;
+}
+
+.form__illustration{
+    border-right: 8px solid white;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    overflow: hidden;
+    
+}
+
+.form__illustration img{
+    width: 20rem;
+    height: 100%;
+    border-radius: 0.8rem;
+    
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+}
+
+.form__heading{
+    margin-bottom: 1.8rem;
+}
+
+.form__heading h3{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.form__heading p{
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.input-wrap{
+    margin-bottom: 32px;
+    display : flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.input-wrap label{
+    color: var(--secondary);
+    font-size: 0.85rem;
+    pointer-events: none;
+    margin-bottom: 0.1rem;
+}
+
+.input-field{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 0.1rem solid #ccc;
+    padding: 0 0.3rem;
+    font-size: 0.9rem;
+    color: #151111;
+    transition: border-color 0.4s ease-in-out;
+}
+
+.input-field:focus-within{
+    border-color: var(--secondary);
+}
+
+.sign-btn{
+    display: inline-block;
+    width: 40%;
+    height: 2.5rem;
+    color: var(--primary);
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary);
+    font-size: 0.94rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.85;
+    border-radius: 2rem;
+    margin-bottom: 1.2rem;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.sign-btn:hover{
+    opacity: 1;
+}
+
+.actual-form p.text{
+    font-size: 0.75rem;
+}

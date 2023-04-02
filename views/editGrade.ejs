@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Grade</title>
+</head>
+
+<body>
+    <h1>Edit Grade</h1>
+    <form action="/professorDashboard/<%=professorId %>/manageStudents/<%=subjectId %>?_method=PUT" method="POST">
+        <label for="name">Student Name</label>
+        <input type="text" name="name" id="name" placeholder="Student name" value="<%=student.username%>">
+        <label for="grade">Grade</label>
+        <input type="number" id="grade" name="grade" placeholder="Grade">
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
