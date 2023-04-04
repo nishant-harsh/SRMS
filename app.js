@@ -9,6 +9,7 @@ const methodOverride=require('method-override');
 const passport=require('passport');
 const LocalStrategy=require('passport-local');
 const { ObjectId } = require('mongodb');
+const routes = require('./routes/route');
 
 mongoose.connect('mongodb://localhost:27017/srms',{
     useNewUrlParser:true,
@@ -59,6 +60,8 @@ app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
+app.use('/', routes);
 
 app.get('/',(req, res) => {
     res.render('home');
