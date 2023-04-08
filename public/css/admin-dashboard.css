@@ -316,7 +316,7 @@ body {
   
   
   .wrapper .sidebar ul li a:hover {
-   color: #8fc04e; 
+   color: #0d6efd; 
   }
   
   .wrapper .main_content {
@@ -369,7 +369,7 @@ body {
   }
   
   .dropdown-btn:hover {
-     color: #8fc04e; 
+     color: #0d6efd; 
   }
   .main {
     margin-left: 200px;
@@ -410,7 +410,7 @@ body {
  
   .dashboard-stat {
     display: block;
-    background-color: #3ea939;
+    background-color: #0d6efd;
     padding: 30px 20px ;
     text-align: right;
     position: relative;
@@ -446,7 +446,7 @@ body {
   }
   
   .dashboard-stat:hover {
-    background-color: #2e8d1d;
+    background-color: #0d6efd;
     color: white;
     text-decoration: none;
     border: 2px solid black;
